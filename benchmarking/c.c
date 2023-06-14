@@ -13,7 +13,6 @@ int main(void)
 	sort(toSort);
 
 	return 0;
-
 }
 
 void build(int l[])
@@ -23,13 +22,14 @@ void build(int l[])
 		l[i] = num--;
 }
 
-void sort(int l[]) {
+void sort(int l[])
+{
 	int sorted = 0;
-	
-	/* Bubble sort */
+	int n = SIZE;
+
 	while (!sorted) {
 		sorted = 1;
-		for (int i = 0; i < SIZE - 1; i++) {
+		for (int i = 0; i < n - 1; i++) {
 			if (l[i] > l[i + 1]) {
 				int temp = l[i + 1];
 				l[i + 1] = l[i];
@@ -37,5 +37,6 @@ void sort(int l[]) {
 				sorted = 0;
 			}
 		}
+		n--;
 	}
 }
