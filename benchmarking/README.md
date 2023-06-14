@@ -1,5 +1,5 @@
-## Make speedTest.sh executable:
-```$ chmod +x speedTest.sh```
+## Make benchmark.sh executable:
+```$ chmod +x benchmark.sh```
 
 ## Compile C and Crystal with no optimizations:
 Crystal:
